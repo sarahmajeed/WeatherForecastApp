@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  background-image: url(./../../assets/weather.jpg);
+  background-size: cover;
+
+  h1 {
+    text-transform: uppercase;
+    color: #445c62;
+    height: 100px;
+    margin-top: 10px;
+  }
+
+  .button {
+    margin: 0px;
+    padding: 10px;
+    height: 50px;
+    border-radius: 40%;
+    background-color: #81acbc;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    color: #fef9f3;
+
+    //font-family: 'Source Serif Pro', sans-serif;
+
+    text-align: center;
+  }
+
+  .button:hover {
+    color: #81acbc;
+    background-color: #fef9f3;
+  }
+}

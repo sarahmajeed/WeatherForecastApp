@@ -1,0 +1,24 @@
+.main {
+  .back {
+    margin: 0px;
+    padding: 10px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fef9f3;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .form {
+    height: 40px;
+    margin: 10px;
+    .city {
+      margin: 10px;
+    }
+    .button {
+      margin: 10px;
+    }
+  }
+}
