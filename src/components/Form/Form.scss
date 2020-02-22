@@ -14,9 +14,39 @@
   .form {
     height: 40px;
     margin: 10px;
+    .city,
+    .country {
+      padding: 5px;
+      height: 50px;
+      //width: 50%;
+      outline: none;
+
+      border: none;
+      border-bottom: 2px solid #031f3c;
+
+      background-color: transparent;
+      margin-bottom: 15px;
+      font-size: 20px;
+
+      &::placeholder {
+        // border: 1px solid #ccc;
+        padding: 7px 14px 9px;
+        transition: 0.4s;
+      }
+      &:focus {
+        background-color: transparent;
+        border-bottom: 2px solid #f19997;
+      }
+
+      &:focus::placeholder {
+        color: transparent;
+      }
+    }
+
     .city {
       margin: 10px;
     }
+
     .button {
       margin: 10px;
     }

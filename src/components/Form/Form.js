@@ -13,6 +13,7 @@ function Form({
   temp,
   description,
   weatherIcon,
+  error,
 }) {
   return (
     <div className='main'>
@@ -21,7 +22,7 @@ function Form({
       </button>
       <form className='form' onSubmit={loadWeather}>
         <input
-          className='city'
+          className='textbox city'
           type='text'
           placeholder='City'
           //value={city}
@@ -29,7 +30,7 @@ function Form({
           onChange={handleChange}
         />
         <input
-          className='country'
+          className='textbox country'
           type='text'
           placeholder='Country'
           //value={country}
@@ -45,6 +46,7 @@ function Form({
         temp={temp}
         description={description}
         weatherIcon={weatherIcon}
+        error={error}
       />
     </div>
   );

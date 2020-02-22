@@ -8,22 +8,26 @@ function WeatherCard({
   temp,
   description,
   weatherIcon,
+  error,
 }) {
   return (
-    <div>
-      <div className='cards'>
-        <h1>{city}</h1>
-        <h1>
-          <i className={`wi ${weatherIcon} display-1`} />
-        </h1>
-
-        {temp ? <h1>{temp}&deg;</h1> : null}
-
-        {/**show max min temp */}
-        {minmaxTemp(temp_max, temp_min)}
-
-        <h2>{description}</h2>
-      </div>
+    <div className='cards'>
+      {error ? (
+        <h1>Sorry!Please type a valid city and country</h1>
+      ) : (
+        <div>
+          {' '}
+          <div className='icon'>
+            <h1>{city}</h1>
+            <h1>
+              <i className={`wi ${weatherIcon} display-1`} />
+            </h1>
+          </div>
+          {temp ? <h1>{temp}&deg;</h1> : null}
+          {minmaxTemp(temp_max, temp_min)}
+          <h2>{description}</h2>
+        </div>
+      )}
     </div>
   );
 }
